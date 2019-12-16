@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: sharing-cloud-zuul
+  profiles:
+    active: prod
+  cloud:
+    config:
+      uri: http://127.0.0.1:8862
+      profile: docker
+
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    path: ./log/
+server:
+  port: 8763
